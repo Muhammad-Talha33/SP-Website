@@ -114,15 +114,18 @@ const Sidebar: React.FC<SidebarProps> = ({
       )}
 
       {/* Sidebar */}
-      <aside
-        className={`
-        fixed top-0 left-0 z-50 h-full w-72 bg-card border-r border-border
-        transform transition-transform duration-300 ease-in-out
-        ${isOpen ? "translate-x-0" : "-translate-x-full"}
-        md:translate-x-0 md:static md:z-auto
-      `}
-      >
-        <div className="flex flex-col h-full bg-gradient-to-br from-white via-emerald-50 to-emerald-100 dark:from-[#14332f] dark:via-[#0c2a27] dark:to-[#064537]">
+  <aside
+  className={`
+    fixed top-0 left-0 z-50 
+    h-screen w-72 bg-card border-r border-border
+    overflow-y-auto
+    transform transition-transform duration-300 ease-in-out
+    ${isOpen ? "translate-x-0" : "-translate-x-full"}
+    md:translate-x-0 md:static md:z-auto
+  `}
+>
+
+        <div className="flex flex-col  bg-linear-to-br from-white via-emerald-50 to-emerald-100 dark:from-[#14332f] dark:via-[#0c2a27] dark:to-[#064537]">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border">
             <div className="flex items-center gap-2">
